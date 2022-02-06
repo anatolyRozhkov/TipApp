@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
     private fun calculateTip() {
         // get input text
         // check if input is not empty
-        if (binding.costOfService.text.toString() == "") {
+        if (binding.costOfServiceEditText.text.toString() == "") {
             binding.displayAnswer.text = ""
             Log.d("MyActivity", "Empty input")
         } else {
-            val cost = binding.costOfService.text.toString().toDouble()
+            val cost = binding.costOfServiceEditText.text.toString().toDouble()
             Log.d("MyActivity", "Input: $cost")
 
             // convert radio button id to percentage

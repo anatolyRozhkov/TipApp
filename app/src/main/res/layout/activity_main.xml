@@ -7,14 +7,21 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <EditText android:id="@+id/cost_of_service"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cost_of_service"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_width="400dp"
-        android:inputType="numberDecimal"
-        android:autofillHints="no"
-        android:hint="@string/cost_of_service_tip"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/cost_of_service_tip">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cost_of_service_edit_text"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView android:id="@+id/text_under_input"
         android:layout_width="wrap_content"
