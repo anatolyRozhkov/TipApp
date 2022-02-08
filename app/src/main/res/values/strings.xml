@@ -8,4 +8,7 @@
     <string name="text_switch">Round up tip?</string>
     <string name="button_text">CALCULATE</string>
     <string name="display_tip">Tip Amount: %s</string>
+    <string name="store_icon_description">Store icon</string>
+    <string name="bell_icon_description">Bell icon</string>
+    <string name="arrow_icon_description">Arrow icon</string>
 </resources>
